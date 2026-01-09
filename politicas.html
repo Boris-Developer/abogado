@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad | Juan V. Chacón Farfán - Abogado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: #0a1a2d;
+        }
+        
+        .header-gradient {
+            background: linear-gradient(135deg, #0a1a2d 0%, #1a365d 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-gradient::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23c9a962' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+            opacity: 0.3;
+        }
+        
+        .badge-ley {
+            background: linear-gradient(135deg, #c9a962 0%, #e6c47a 100%);
+            color: #0a1a2d;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .back-btn {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateX(-5px);
+            border-color: rgba(201, 169, 98, 0.5);
+        }
+        
+        .law-icon {
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #c9a962, transparent);
+        }
+        
+        .gold-text {
+            color: #c9a962;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Mejorado -->
+    <header class="header-gradient text-white">
+        <!-- Barra superior -->
+        <div class="border-b border-white/10 py-3">
+            <div class="container mx-auto px-6">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center text-sm text-gray-300">
+                            <i class="fas fa-scale-balanced mr-2 text-amber-400"></i>
+                            <span>Conforme a la legislación peruana</span>
+                        </div>
+                        <div class="hidden md:flex items-center text-sm text-gray-300">
+                            <i class="fas fa-file-contract mr-2 text-amber-400"></i>
+                            <span>Documento legalmente exigible</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="index.html" class="back-btn px-4 py-2 rounded-lg inline-flex items-center text-sm font-medium">
+                            <i class="fas fa-arrow-left mr-2"></i>
+                            <span class="hidden sm:inline">Volver al sitio</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenido principal del header -->
+        <div class="container mx-auto px-6 py-10 md:py-16 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <!-- Columna izquierda: Logo y título -->
+                <div class="lg:w-2/3 mb-10 lg:mb-0 lg:pr-10">
+                    <!-- Badge de ley -->
+                    <div class="inline-flex items-center badge-ley px-4 py-2 rounded-full mb-6">
+                        <i class="fas fa-gavel mr-2"></i>
+                        <span class="font-bold">LEY N° 29733</span>
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight text-gray-300">
+                        Política de Privacidad y<br>
+                        <span class="gold-text">Tratamiento de Datos Personales</span>
+                    </h1>
+                    
+                    <div class="section-divider w-48 my-6"></div>
+                    
+                    <p class="text-xl text-gray-300 mb-6 max-w-3xl">
+                        Estricto cumplimiento de la Ley de Protección de Datos Personales del Perú y su Reglamento. 
+                        Garantizamos la confidencialidad y seguridad de su información personal.
+                    </p>
+                    
+                    <!-- Info rápida -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                        <div class="flex items-center bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                            <div class="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center mr-4">
+                                <i class="fas fa-user-shield text-amber-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Secreto Profesional</p>
+                                <p class="font-bold">Garantizado por Ley</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center bg-white/10 p-4 rounded-lg backdrop-blur-sm">
+                            <div class="w-12 h-12 rounded-full bg-amber-500/20 flex items-center justify-center mr-4">
+                                <i class="fas fa-lock text-amber-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Derechos ARCO</p>
+                                <p class="font-bold">Protegidos por Ley</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Columna derecha: Info del abogado -->
+                <div class="lg:w-1/3">
+                    <div class="bg-gradient-to-br from-gray-900/90 to-gray-800/90 backdrop-blur-sm rounded-2xl p-8 border border-white/10 shadow-xl">
+                        <div class="text-center mb-6">
+                            <div class="inline-block p-3 rounded-full bg-gradient-to-br from-amber-500 to-amber-600 mb-4">
+                                <div class="w-20 h-20 rounded-full bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center">
+                                    <span class="text-white font-bold text-2xl">JC</span>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold mb-1 text-gray-300">Juan V. Chacón Farfán</h3>
+                            <p class="text-amber-400 font-medium">Abogado Litigante</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center border-b border-white/10 pb-4">
+                                <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-id-card text-amber-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Colegiado N°</p>
+                                    <p class="font-medium">CAL 12345</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center border-b border-white/10 pb-4">
+                                <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-amber-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Contacto</p>
+                                    <p class="font-medium">consultas@jvchaconfarfan.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-full bg-amber-500/20 flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone text-amber-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Teléfono</p>
+                                    <p class="font-medium">+51 1 234-5678</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 pt-6 border-t border-white/10">
+                            <div class="flex items-center justify-center text-sm text-gray-300">
+                                <i class="fas fa-clock mr-2 text-amber-400"></i>
+                                <span>Documento vigente desde: 15/11/2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Elemento decorativo inferior -->
+        <div class="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-transparent via-amber-500 to-transparent opacity-50"></div>
+    </header>
+
+    <!-- Fecha de actualización -->
+    <div class="bg-gradient-to-r from-amber-50 to-yellow-50 py-4 border-y border-amber-200">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="flex items-center mb-3 md:mb-0">
+                    <div class="bg-white rounded-full p-2 mr-3 shadow-sm">
+                        <i class="fas fa-calendar-alt text-amber-600"></i>
+                    </div>
+                    <div>
+                        <p class="text-amber-800 font-bold text-lg">Última actualización</p>
+                        <p class="text-amber-700">15 de Noviembre de 2023</p>
+                    </div>
+                </div>
+                
+                <div class="flex items-center">
+                    <div class="bg-white rounded-full p-2 mr-3 shadow-sm">
+                        <i class="fas fa-scale-balanced text-blue-600"></i>
+                    </div>
+                    <div>
+                        <p class="text-blue-800 font-bold text-lg">Normativa aplicable</p>
+                        <p class="text-blue-700">Ley N° 29733 y D.S. N° 003-2013-JUS</p>
+                    </div>
+                </div>
+                
+                <div class="mt-3 md:mt-0">
+                    <a href="#pdf-download" class="inline-flex items-center bg-amber-500 hover:bg-amber-600 text-white font-medium py-2 px-6 rounded-lg transition duration-300 shadow-md hover:shadow-lg">
+                        <i class="fas fa-download mr-2"></i>
+                        Descargar PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="container mx-auto px-6 py-12">
+        <!-- Introducción -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-sm p-8">
+                <h2 class="text-2xl font-bold mb-6 text-center">Declaración de Cumplimiento Legal</h2>
+                <div class="section-divider w-32 mx-auto mb-8"></div>
+                <p class="text-lg text-gray-700 mb-6">
+                    En el <strong>Despacho Jurídico de Juan V. Chacón Farfán</strong>, reconocemos la importancia de la protección de datos personales y nos comprometemos a respetar y proteger la privacidad de nuestros clientes, colaboradores y visitantes de acuerdo con la <strong>Ley N° 29733, Ley de Protección de Datos Personales</strong> y su Reglamento aprobado por el Decreto Supremo N° 003-2013-JUS.
+                </p>
+                <p class="text-lg text-gray-700">
+                    La presente Política de Privacidad establece los términos en que recabamos, utilizamos, almacenamos y protegemos la información personal que usted nos proporciona a través de nuestro sitio web, consultas presenciales, telefónicas o por cualquier otro medio.
+                </p>
+            </div>
+        </section>
+
+        <!-- Secciones legales -->
+        <div class="legal-section bg-white rounded-lg shadow-sm p-8">
+            <!-- Sección 1 -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-800 rounded-full w-10 h-10 flex items-center justify-center mr-4">1</span>
+                    Responsable del Tratamiento de Datos
+                </h2>
+                <div class="ml-14">
+                    <p class="mb-4 text-gray-700">
+                        El responsable del tratamiento de los datos personales es:
+                    </p>
+                    <div class="bg-gray-50 p-6 rounded-lg border-l-4 border-blue-500 mb-4">
+                        <h3 class="font-bold text-lg mb-2">Juan Vicente Chacón Farfán</h3>
+                        <p class="mb-1"><strong>DNI:</strong> 12345678</p>
+                        <p class="mb-1"><strong>Dirección:</strong> Av. Principal 1234, Distrito Financiero, Lima, Perú</p>
+                        <p class="mb-1"><strong>Teléfono:</strong> +51 1 234-5678</p>
+                        <p class="mb-1"><strong>Correo electrónico:</strong> consultas@jvchaconfarfan.com</p>
+                        <p class="mb-1"><strong>Colegio de Abogados de Lima:</strong> Miembro activo con matrícula N° 12345</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 2 -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-800 rounded-full w-10 h-10 flex items-center justify-center mr-4">2</span>
+                    Finalidades del Tratamiento de Datos
+                </h2>
+                <div class="ml-14">
+                    <p class="mb-4 text-gray-700">
+                        Los datos personales que recabamos serán tratados para las siguientes finalidades:
+                    </p>
+                    <ul class="list-disc pl-6 text-gray-700 space-y-3">
+                        <li>
+                            <strong>Finalidad Principal:</strong> Prestar los servicios de asesoría y representación legal solicitados, incluyendo la evaluación de casos, elaboración de estrategias legales, representación en procedimientos judiciales y extrajudiciales, y gestión de trámites relacionados.
+                        </li>
+                        <li>
+                            <strong>Finalidades Secundarias:</strong>
+                            <ul class="list-circle pl-6 mt-2 space-y-2">
+                                <li>Gestión administrativa de la relación cliente-abogado</li>
+                                <li>Envío de información sobre actualizaciones legales relevantes para su caso</li>
+                                <li>Facturación y cobranza de honorarios profesionales</li>
+                                <li>Cumplimiento de obligaciones legales y regulatorias</li>
+                                <li>Estadísticas internas para mejora de nuestros servicios</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Base Legal:</strong> El tratamiento de sus datos se basa en su consentimiento explícito, la ejecución del contrato de servicios legales y el cumplimiento de obligaciones legales aplicables al ejercicio de la abogacía en el Perú.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sección 3 -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-800 rounded-full w-10 h-10 flex items-center justify-center mr-4">3</span>
+                    Datos Personales Recabados
+                </h2>
+                <div class="ml-14">
+                    <p class="mb-4 text-gray-700">
+                        Podemos recabar los siguientes tipos de datos personales:
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-gray-50 p-5 rounded-lg">
+                            <h3 class="font-bold text-lg mb-3 text-blue-700">Datos Identificativos</h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                                <li>Nombres y apellidos completos</li>
+                                <li>Documento Nacional de Identidad (DNI)</li>
+                                <li>Dirección de domicilio</li>
+                                <li>Número de teléfono</li>
+                                <li>Dirección de correo electrónico</li>
+                                <li>Firma autógrafa</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-gray-50 p-5 rounded-lg">
+                            <h3 class="font-bold text-lg mb-3 text-blue-700">Datos del Caso Legal</h3>
+                            <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                                <li>Información sobre el asunto legal</li>
+                                <li>Documentación relacionada con el caso</li>
+                                <li>Historial de comunicaciones</li>
+                                <li>Información financiera para facturación</li>
+                                <li>Datos de la contraparte (cuando aplique)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-amber-50 p-5 rounded-lg border-l-4 border-amber-500">
+                        <h3 class="font-bold text-lg mb-2 text-amber-700">
+                            <i class="fas fa-shield-alt mr-2"></i>Datos Sensibles
+                        </h3>
+                        <p class="text-gray-700">
+                            En el ejercicio de nuestra labor legal, podríamos tratar datos sensibles (salud, antecedentes penales, información financiera, etc.) únicamente cuando sea estrictamente necesario para la defensa de sus derechos, con su consentimiento explícito y aplicando medidas de seguridad reforzadas según lo establecido en el Artículo 7° de la Ley N° 29733.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 4 -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-800 rounded-full w-10 h-10 flex items-center justify-center mr-4">4</span>
+                    Conservación de los Datos
+                </h2>
+                <div class="ml-14">
+                    <p class="mb-4 text-gray-700">
+                        Conservaremos sus datos personales durante el tiempo necesario para cumplir con las finalidades descritas y conforme a los plazos legales aplicables:
+                    </p>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <table class="w-full text-gray-700">
+                            <thead class="bg-gray-100">
+                                <tr>
+                                    <th class="py-3 px-4 text-left font-bold">Tipo de Documento</th>
+                                    <th class="py-3 px-4 text-left font-bold">Plazo de Conservación</th>
+                                    <th class="py-3 px-4 text-left font-bold">Fundamento Legal</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr>
+                                    <td class="py-3 px-4">Expedientes judiciales</td>
+                                    <td class="py-3 px-4">10 años después de la conclusión del proceso</td>
+                                    <td class="py-3 px-4">Código Procesal Civil y Penal</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Contratos y poderes</td>
+                                    <td class="py-3 px-4">10 años después de su terminación</td>
+                                    <td class="py-3 px-4">Código Civil y Reglamento del Colegio de Abogados</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Información financiera</td>
+                                    <td class="py-3 px-4">6 años</td>
+                                    <td class="py-3 px-4">Ley del Impuesto a la Renta</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 px-4">Datos de contacto</td>
+                                    <td class="py-3 px-4">Hasta que solicite su eliminación</td>
+                                    <td class="py-3 px-4">Ley N° 29733</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 5 -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-800 rounded-full w-10 h-10 flex items-center justify-center mr-4">5</span>
+                    Medidas de Seguridad
+                </h2>
+                <div class="ml-14">
+                    <p class="mb-4 text-gray-700">
+                        Implementamos medidas técnicas, organizativas y legales para garantizar la seguridad y confidencialidad de sus datos personales:
+                    </p>
+                    
+                    <div class="grid md:grid-cols-3 gap-6 mb-6">
+                        <div class="bg-blue-50 p-5 rounded-lg text-center">
+                            <div class="text-blue-600 text-3xl mb-3">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h3 class="font-bold mb-2">Seguridad Física</h3>
+                            <p class="text-sm text-gray-700">Archivos en oficinas con control de acceso, sistemas de vigilancia y cerraduras de seguridad.</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-5 rounded-lg text-center">
+                            <div class="text-blue-600 text-3xl mb-3">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3 class="font-bold mb-2">Seguridad Digital</h3>
+                            <p class="text-sm text-gray-700">Encriptación de datos, contraseñas robustas, firewalls y copias de seguridad periódicas.</p>
+                        </div>
+                        
+                        <div class="bg-blue-50 p-5 rounded-lg text-center">
+                            <div class="text-blue-600 text-3xl mb-3">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h3 class="font-bold mb-2">Capacitación</h3>
+                            <p class="text-sm text-gray-700">Personal capacitado en protección de datos y confidencialidad profesional.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-green-50 p-5 rounded-lg border-l-4 border-green-500">
+                        <h3 class="font-bold text-lg mb-2 text-green-700">
+                            <i class="fas fa-balance-scale mr-2"></i>Secreto Profesional
+                        </h3>
+                        <p class="text-gray-700">
+                            Como abogado colegiado, estoy sujeto al <strong>secreto profesional</strong> establecido en el Código de Ética del Colegio de Abogados de Lima y la Ley de la Abogacía, que garantiza la confidencialidad absoluta de toda información relacionada con la representación legal.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 6 -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-800 rounded-full w-10 h-10 flex items-center justify-center mr-4">6</span>
+                    Derechos ARCO
+                </h2>
+                <div class="ml-14">
+                    <p class="mb-4 text-gray-700">
+                        Usted tiene derecho a ejercer los siguientes derechos sobre sus datos personales:
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="border border-gray-200 rounded-lg p-5 hover:border-blue-300 transition">
+                            <h3 class="font-bold text-lg mb-2 text-blue-700">Derecho de Acceso</h3>
+                            <p class="text-gray-700 text-sm">Solicitar información sobre sus datos personales que tenemos en nuestro poder.</p>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-lg p-5 hover:border-blue-300 transition">
+                            <h3 class="font-bold text-lg mb-2 text-blue-700">Derecho de Rectificación</h3>
+                            <p class="text-gray-700 text-sm">Solicitar la corrección de datos inexactos o incompletos.</p>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-lg p-5 hover:border-blue-300 transition">
+                            <h3 class="font-bold text-lg mb-2 text-blue-700">Derecho de Cancelación</h3>
+                            <p class="text-gray-700 text-sm">Solicitar la eliminación de sus datos cuando ya no sean necesarios.</p>
+                        </div>
+                        
+                        <div class="border border-gray-200 rounded-lg p-5 hover:border-blue-300 transition">
+                            <h3 class="font-bold text-lg mb-2 text-blue-700">Derecho de Oposición</h3>
+                            <p class="text-gray-700 text-sm">Oponerse al tratamiento de sus datos para fines específicos.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h3 class="font-bold text-lg mb-3 text-blue-700">
+                            <i class="fas fa-file-signature mr-2"></i>Procedimiento para ejercer sus derechos ARCO
+                        </h3>
+                        <ol class="list-decimal pl-6 space-y-3 text-gray-700">
+                            <li>Presentar solicitud escrita dirigida a Juan V. Chacón Farfán</li>
+                            <li>Incluir copia de su DNI o documento de identidad</li>
+                            <li>Especificar claramente el derecho que desea ejercer</li>
+                            <li>Indicar los datos que desea acceder, rectificar, cancelar u oponer</li>
+                            <li>Enviar la solicitud a: consultas@jvchaconfarfan.com o a nuestra dirección física</li>
+                        </ol>
+                        <p class="mt-4 text-gray-700">
+                            <strong>Plazo de respuesta:</strong> Atenderemos su solicitud en un plazo máximo de <strong>20 días hábiles</strong> desde su recepción, conforme al Artículo 25° de la Ley N° 29733.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 7 -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-800 rounded-full w-10 h-10 flex items-center justify-center mr-4">7</span>
+                    Transferencia Internacional de Datos
+                </h2>
+                <div class="ml-14">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <p class="mb-4 text-gray-700">
+                            En principio, no transferimos datos personales a otros países. Sin embargo, en caso de ser necesario para la representación legal (por ejemplo, en casos con elementos de extranjería o que requieran coordinación con abogados en otros países), solicitaremos su consentimiento expreso y aplicaremos las garantías adecuadas conforme al Artículo 13° de la Ley N° 29733.
+                        </p>
+                        <p class="text-gray-700">
+                            <strong>Excepción:</strong> No se requiere consentimiento cuando la transferencia sea necesaria para la ejecución de un contrato entre usted y el responsable, o para la celebración o ejecución de un contrato celebrado en interés del titular.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 8 -->
+            <section class="mb-10">
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-800 rounded-full w-10 h-10 flex items-center justify-center mr-4">8</span>
+                    Consentimiento y Modificaciones
+                </h2>
+                <div class="ml-14">
+                    <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+                        <h3 class="font-bold text-lg mb-3 text-yellow-700">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>Consentimiento
+                        </h3>
+                        <p class="mb-4 text-gray-700">
+                            Al utilizar nuestros servicios o proporcionarnos sus datos personales, usted otorga su <strong>consentimiento libre, previo, expreso, informado e inequívoco</strong> para el tratamiento de sus datos personales conforme a lo establecido en la presente Política de Privacidad.
+                        </p>
+                        
+                        <h3 class="font-bold text-lg mb-3 text-yellow-700">
+                            <i class="fas fa-edit mr-2"></i>Modificaciones
+                        </h3>
+                        <p class="text-gray-700">
+                            Nos reservamos el derecho de modificar esta Política de Privacidad para adaptarla a cambios legislativos, jurisprudenciales o de mejores prácticas. Cualquier modificación será publicada en esta página web con la fecha de actualización correspondiente. Le recomendamos revisar periódicamente esta política.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección 9 -->
+            <section>
+                <h2 class="text-2xl font-bold mb-6 flex items-center">
+                    <span class="bg-blue-100 text-blue-800 rounded-full w-10 h-10 flex items-center justify-center mr-4">9</span>
+                    Autoridad de Protección de Datos
+                </h2>
+                <div class="ml-14">
+                    <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                        <h3 class="font-bold text-lg mb-3 text-red-700">
+                            <i class="fas fa-gavel mr-2"></i>Derecho de Reclamo
+                        </h3>
+                        <p class="mb-4 text-gray-700">
+                            Si considera que sus derechos han sido vulnerados, puede presentar un reclamo ante la autoridad nacional de protección de datos:
+                        </p>
+                        
+                        <div class="bg-white p-5 rounded-lg">
+                            <h4 class="font-bold text-lg mb-2">Dirección de Protección de Datos Personales</h4>
+                            <p class="mb-2"><strong>Entidad:</strong> Ministerio de Justicia y Derechos Humanos</p>
+                            <p class="mb-2"><strong>Dirección:</strong> Scipión Llona 350, Miraflores, Lima - Perú</p>
+                            <p class="mb-2"><strong>Teléfono:</strong> (01) 204-8020</p>
+                            <p class="mb-2"><strong>Correo:</strong> protecciondedatos@minjus.gob.pe</p>
+                            <p class="mb-2"><strong>Web:</strong> <a href="https://www.minjus.gob.pe/proteccion-de-datos-personales/" class="text-blue-600 hover:underline" target="_blank">www.minjus.gob.pe/proteccion-de-datos-personales/</a></p>
+                        </div>
+                        
+                        <p class="mt-4 text-gray-700">
+                            Antes de acudir a la autoridad, le recomendamos contactarnos directamente para resolver cualquier inquietud sobre el tratamiento de sus datos personales.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Aceptación -->
+        <section class="mt-12">
+            <div class="bg-white rounded-lg shadow-sm p-8 border border-blue-200">
+                <h2 class="text-2xl font-bold mb-6 text-center text-blue-800">Declaración de Aceptación</h2>
+                <div class="section-divider w-32 mx-auto mb-8"></div>
+                
+                <div class="bg-blue-50 p-6 rounded-lg mb-6">
+                    <p class="text-lg text-gray-700 text-center">
+                        Al utilizar nuestros servicios, navegar por nuestro sitio web o proporcionarnos cualquier información personal, usted reconoce haber leído, entendido y aceptado los términos de esta <strong>Política de Privacidad y Tratamiento de Datos Personales</strong>.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-gray-600 mb-4">
+                        Para cualquier consulta sobre esta política o sobre el tratamiento de sus datos personales, puede contactarnos:
+                    </p>
+                    <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8">
+                        <a href="mailto:consultas@jvchaconfarfan.com" class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center">
+                            <i class="fas fa-envelope mr-2"></i> consultas@jvchaconfarfan.com
+                        </a>
+                        <a href="tel:+5112345678" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center">
+                            <i class="fas fa-phone mr-2"></i> +51 1 234-5678
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center mr-3">
+                            <span class="text-white font-bold text-lg">JC</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-300">Juan V. Chacón Farfán</h3>
+                            <p class="text-gray-400 text-sm">Abogado Especialista en Litigios de Alto Nivel</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 mb-2">
+                        <i class="fas fa-balance-scale mr-2"></i>Colegiado en el Ilustre Colegio de Abogados de Cusco
+                    </p>
+                    <p class="text-gray-400">
+                        © <span id="yearPolicaFooter"></span> Juan V. Chacón Farfán. Todos los derechos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Actualizar fecha automáticamente
+        document.addEventListener('DOMContentLoaded', function() {
+            const fechaElement = document.querySelector('.text-amber-700');
+            if(fechaElement) {
+                const hoy = new Date();
+                const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+                const fechaFormateada = hoy.toLocaleDateString('es-ES', opciones);
+                fechaElement.textContent = fechaFormateada;
+                
+                // Actualizar también el elemento en el card del abogado
+                const fechaVigencia = document.querySelector('.border-t.border-white\\/10 .text-gray-300 span');
+                if(fechaVigencia) {
+                    fechaVigencia.textContent = `Documento vigente desde: ${fechaFormateada}`;
+                }
+            }
+            
+            // Efecto de scroll para el botón de volver
+            const backBtn = document.querySelector('.back-btn');
+            if(backBtn) {
+                backBtn.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateX(-5px)';
+                });
+                
+                backBtn.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateX(0)';
+                });
+            }
+
+            // Año actual en el pie de página
+            document.getElementById("yearPolicaFooter").textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>

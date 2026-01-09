@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Confirmada - Dr. Juan V. Chacón Farfán</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a1a2d 0%, #1a365d 100%);
+            min-height: 100vh;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .confetti {
+            position: fixed;
+            width: 15px;
+            height: 15px;
+            background-color: #f0db4f;
+            opacity: 0;
+        }
+        
+        @keyframes confetti-fall {
+            0% {
+                transform: translateY(-100px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Confetti effect -->
+    <div id="confetti-container"></div>
+    
+    <div class="container mx-auto px-4 py-16">
+        <div class="max-w-2xl mx-auto bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-2xl border border-white/20">
+            <!-- Icono de éxito -->
+            <div class="text-center mb-10">
+                <div class="relative inline-block">
+                    <div class="w-28 h-28 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-2xl animate-pulse">
+                        <i class="fas fa-check text-5xl"></i>
+                    </div>
+                    <div class="absolute -top-2 -right-2 w-10 h-10 bg-amber-500 rounded-full flex items-center justify-center shadow-lg">
+                        <i class="fas fa-star text-white text-sm"></i>
+                    </div>
+                </div>
+                
+                <h1 class="text-4xl font-bold mb-4 bg-gradient-to-r from-amber-300 to-white bg-clip-text text-transparent">
+                    ¡Consulta Confirmada!
+                </h1>
+                <p class="text-xl text-gray-200 mb-2">Gracias por contactar al Dr. Juan V. Chacón Farfán</p>
+                <p class="text-gray-300">Su caso ha sido registrado con éxito</p>
+            </div>
+            
+            <!-- Tarjeta de detalles -->
+            <div class="bg-black/30 rounded-2xl p-6 mb-10 border border-white/10">
+                <h2 class="text-2xl font-semibold mb-6 text-center flex items-center justify-center">
+                    <i class="fas fa-clipboard-list mr-3 text-amber-400"></i>
+                    Próximos Pasos
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-envelope-open-text text-blue-300 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">1. Confirmación por Email</h3>
+                            <p class="text-gray-300">En los próximos minutos recibirá un email de confirmación en su bandeja de entrada (revise también la carpeta de spam).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-user-tie text-amber-300 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">2. Revisión Personalizada</h3>
+                            <p class="text-gray-300">El Dr. Chacón Farfán revisará personalmente los detalles de su caso para preparar una estrategia legal adecuada.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-phone-alt text-green-300 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">3. Contacto Directo</h3>
+                            <p class="text-gray-300">Recibirá una llamada o email del equipo legal en un plazo máximo de <span class="font-bold text-white">24 horas hábiles</span>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mr-4">
+                            <i class="fas fa-file-contract text-purple-300 text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-1">4. Confidencialidad Garantizada</h3>
+                            <p class="text-gray-300">Toda la información compartida está protegida por el secreto profesional y nuestras políticas de privacidad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Información de contacto de emergencia -->
+            <div class="bg-gradient-to-r from-amber-900/30 to-amber-800/20 rounded-2xl p-6 mb-10 border border-amber-500/30">
+                <h3 class="font-bold text-xl mb-4 flex items-center">
+                    <i class="fas fa-exclamation-circle mr-3"></i>
+                    ¿Necesita atención inmediata?
+                </h3>
+                <p class="text-gray-200 mb-4">Si su caso requiere atención urgente, puede contactarnos directamente:</p>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <a href="tel:+5112345678" class="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-lg transition flex items-center justify-center">
+                        <i class="fas fa-phone mr-3"></i> +51 1 234-5678
+                    </a>
+                    <a href="mailto:emergencias@jvchaconfarfan.com" class="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg transition flex items-center justify-center">
+                        <i class="fas fa-envelope mr-3"></i> Email Urgente
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Botones de acción -->
+            <div class="text-center space-y-4">
+                <a href="index.html" class="inline-block bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white font-semibold py-4 px-10 rounded-xl transition duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-home mr-3"></i> Volver al Inicio
+                </a>
+                <p class="text-gray-400 text-sm mt-6">
+                    Número de referencia: <span id="refNumber" class="font-mono font-bold text-amber-300">CLT-${Date.now().toString().slice(-6)}</span><br>
+                    Fecha y hora: <span id="currentDateTime" class="font-semibold"></span>
+                </p>
+            </div>
+        </div>
+        
+        <!-- Footer minimalista -->
+        <div class="text-center mt-12 text-gray-400 text-sm">
+            <p>© 2023 Dr. Juan V. Chacón Farfán - Especialista en Litigios de Alto Nivel</p>
+            <p class="mt-2">Todos los derechos reservados | <a href="#" class="text-amber-400 hover:text-amber-300">Aviso Legal</a> | <a href="#" class="text-amber-400 hover:text-amber-300">Privacidad</a></p>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar fecha y hora actual
+        document.getElementById('currentDateTime').textContent = new Date().toLocaleString('es-ES', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+        
+        // Efecto de confetti
+        function createConfetti() {
+            const container = document.getElementById('confetti-container');
+            const colors = ['#f0db4f', '#ff6b6b', '#48dbfb', '#1dd1a1', '#f368e0'];
+            
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.animation = `confetti-fall ${Math.random() * 3 + 2}s linear forwards`;
+                confetti.style.animationDelay = Math.random() * 2 + 's';
+                container.appendChild(confetti);
+                
+                // Eliminar después de la animación
+                setTimeout(() => {
+                    confetti.remove();
+                }, 5000);
+            }
+        }
+        
+        // Crear confetti al cargar
+        createConfetti();
+        
+        // Redirigir automáticamente después de 30 segundos
+        setTimeout(() => {
+            window.location.href = 'index.html';
+        }, 30000);
+    </script>
+</body>
+</html>
